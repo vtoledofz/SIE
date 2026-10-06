@@ -1,0 +1,5 @@
+# Bloquea el acceso web a los secretos, documentación y SQL de instalación.
+<FilesMatch "^(config\.php|config\.sample\.php|.*\.sql|README\.md)$">
+  Require all denied
+</FilesMatch>
+Options -Indexes
